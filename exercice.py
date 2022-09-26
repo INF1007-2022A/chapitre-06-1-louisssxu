@@ -9,12 +9,13 @@ def order(values: list = None) -> list:
 
     return []
 
-
+#Deux mots sont des anagrammes si vous pouvez réarranger les lettres de l'un pour en former l'autre (par exemple ALEVIN et NIVELA sont des anagrammes). Écrivez un programme qui demande deux chaînes de caractère et qui vérifie si ce sont des anagrammes.
 def anagrams(words: list = None) -> bool:
     if words is None:
-        # TODO: demander les mots ici
-        pass
-
+        word1 = input()
+        word2 = input()
+        if sorted(word1) == sorted(word2):
+            return True
     return False
 
 
